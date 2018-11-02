@@ -1,8 +1,4 @@
 
 
-in order to overcome the difficulty of training under end-to-end training mode, we propose to used the conditional Generative Adversiral Network to pre-generate the ground truth images and then transfer the whole knowledge other than the "noise" encoding part to find the match between original image and the "generated ground truth" OHTER THAN directly match the ground truth with FCN mode. Note that: different from the classic FCN which also envolve the decoding part operated on the original feature map which serves mostly as a up-sampling function, the proposed network architecture enphasis the powerful ability of the Generative Network from a noise vector to match the relation between generated ground truth and the original image. The experiments shows that throught this way the network can overcome the "inaccurate" problem existing in pavement crack detection which talked in our former work.
-
-In additon, after training the two network separately, we also seek and find a solution to combine them together. So the final network is a whole one which do the classificaiton (attention generation) and the detection / GT-matching in a whole.
-
 
 anthoer point we could added is the network optimization: channel prunning.
